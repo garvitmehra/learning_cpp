@@ -12,7 +12,9 @@ int main()
         cout << "invalid marks" << endl;
         return 0;
     }
+
     cout << "enter hindi marks :  ";
+
     cin >> num2;
     if (num2 > 80)
     {
@@ -35,12 +37,16 @@ int main()
     }
     cout << "enter science marks :  ";
     cin >> num5;
+
     if (num5 > 80)
     {
         cout << "invalid marks" << endl;
-        }
+    }
+
+
     int result = num1 + num2 + num3 + num4 + num5;
-    double score = result / 100 * 400;
+    double score = (result / 400 ) * 100;
+
     if (score <= 399 && score >= 300)
     {
         cout << "you got an a grade";
